@@ -1,30 +1,16 @@
 <h1>GIFDUMP</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Picture</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
+<div class="grid">
     <% @ideas.each do |idea| %>
-      <tr>
-        <td><%= idea.name %></td>
-        <td><%= idea.description %></td>
-        <td><%= idea.picture %></td>
-        <td><%= link_to 'Show', idea %></td>
-        <td><%= link_to 'Edit', edit_idea_path(idea) %></td>
-        <td><%= link_to 'Destroy', idea, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+    <div class="col-2-3">
+      <article class="module">
+<!-- <p><%= idea.name %></p>
+     <p><%= idea.description %></p> -->
+        <p><%= idea.picture %></p><%= link_to 'show', idea %>/<%= link_to 'edit', edit_idea_path(idea) %>/<%= link_to 'delete', idea, method: :delete, data: { confirm: 'Hogg nooooo' } %>
+      </article>
+    </div>
     <% end %>
-  </tbody>
-</table>
+</div>
 
 <br>
 
