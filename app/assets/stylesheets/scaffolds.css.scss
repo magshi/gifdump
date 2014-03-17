@@ -1,5 +1,5 @@
 body {
-  background-color: #000;
+  background-color: #292929;
   color: #fff;
   font-family: 'Open Sans', arial, helvetica, sans-serif;
   font-size: 13px;
@@ -15,11 +15,13 @@ p, ol, ul, td {
 pre {
   background-color: #eee;
   padding: 10px;
-  font-size: 11px;
+  font-size: 15px;
 }
 
 a {
   color: #F2E6B6;
+  font-size: 20px;
+  letter-spacing: 1px;
   text-decoration: none;
   &:visited {
     color: #F2E6B6;
@@ -27,7 +29,7 @@ a {
   &:hover {
     color: #000;
     text-decoration: none;
-    background-color: #FF9311;
+    background-color: #96CEB4;
   }
 }
 
