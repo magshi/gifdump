@@ -11,3 +11,85 @@
  *= require_self
  *= require_tree .
  */
+
+body {
+	background-color: #292929;
+	color: #F2E6B6;
+}
+
+h1 {
+	font-family: 'Belleza', sans-serif;
+}
+
+.navigation {
+	font-family: 'Belleza', sans-serif;
+	margin-left: 0px;
+	padding-left: 50px;
+}
+
+#container {
+	color: black;
+	font-family: 'Belleza', sans-serif;
+	font-size: 50px;
+	margin-left: 0px;
+	margin-right: auto;
+	padding-left: 50px;
+	padding-top: 10px;
+	display: block;
+	width: 600px;
+	height: 500px;
+	clear: both;
+}
+
+#container h1 {
+	margin-bottom: 0px;
+	font-family: 'Belleza', sans-serif;
+}
+
+#content h2 {
+	font-family: 'Belleza', sans-serif;
+	font-size: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+ul {
+	margin-top: 0px;
+}
+
+#content {
+	font-family: 'Open Sans', Arial, sans-serif;
+	color: #F2E6B6;
+	font-size: 18px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 0px;
+	padding-left: 20px;
+	display: block;
+}
+
+ footer {
+  bottom: 0;
+  left: 0;  
+  right: 0;
+  height: 150px;
+  background-color: #96CEB4;
+  border-top: 2px solid #BAD8DE;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 18px;
+  color: #5B7876;
+  position: fixed;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+
+footer a {
+  color: #000 !important;
+  font-size: 50px !important;
+}
+
+footer a:hover {
+  background-color: yellow;
+}
