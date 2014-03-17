@@ -1,17 +1,34 @@
 <h1>GIFDUMP</h1>
 
-<div class="grid">
-    <% @ideas.each do |idea| %>
-    <div class="col-2-3">
+<!-- <div class="grid">
+<% @ideas.in_groups_of(3) do |group| %>
+    <div class="col-1-3">
+          <% group.compact.each do |idea| %>
       <article class="module">
-<!-- <p><%= idea.name %></p>
-     <p><%= idea.description %></p> -->
-        <p><%= idea.picture %></p><%= link_to 'show', idea %>/<%= link_to 'edit', edit_idea_path(idea) %>/<%= link_to 'delete', idea, method: :delete, data: { confirm: 'Hogg nooooo' } %>
+        <p><%= image_tag idea.picture_url(:thumb) if idea.picture? %></p><%= link_to 'show', idea %>/<%= link_to 'edit', edit_idea_path(idea) %>/<%= link_to 'delete', idea, method: :delete, data: { confirm: 'Hogg nooooo' } %>
       </article>
     </div>
     <% end %>
+    </div>
+</div>
+<% end %>
+ -->
+
+<div class="grid grid-pad">
+  <% @ideas.in_groups_of(3) do |group| %>
+    <div class="row">
+      <% group.compact.each do |idea| %>
+      <div class="span4">
+        <p><%= image_tag idea.picture_url(:thumb) if idea.picture? %></p><%= link_to 'edit', edit_idea_path(idea) %>/<%= link_to 'delete', idea, method: :delete, data: { confirm: 'Hogg nooooo' } %>
+      </div>
+    <% end %>
+  </div>
+<% end %>
 </div>
 
-<br>
+<footer>
+  <div class="container">
+    <%= link_to 'NEW', new_idea_path %>
+  </div>
+</footer>
 
-<%= link_to 'New Idea', new_idea_path %>

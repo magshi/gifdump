@@ -11,7 +11,6 @@
 $pad: 20px;
 
 .grid {
-  background: #96CEB4;
   margin: 0 0 $pad 0;
   
   &:after {
@@ -45,7 +44,6 @@ $pad: 20px;
   width: 12.5%;
 }
 
-/* Opt-in outside padding */
 .grid-pad {
   padding: $pad 0 $pad $pad;
   [class*='col-']:last-of-type {
