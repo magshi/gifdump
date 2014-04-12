@@ -18,22 +18,25 @@ body {
 }
 
 h1 {
-	font-family: 'Belleza', sans-serif;
+	font-family: 'Overlock', sans-serif;
+}
+
+.span4 {
+	display: inline;
 }
 
 .navigation {
-	font-family: 'Belleza', sans-serif;
+	font-family: 'Overlock', sans-serif;
 	margin-left: 0px;
 	padding-left: 50px;
 }
 
 #container {
 	color: black;
-	font-family: 'Belleza', sans-serif;
+	font-family: 'Overlock', sans-serif;
 	font-size: 50px;
 	margin-left: 0px;
 	margin-right: auto;
-	padding-left: 50px;
 	padding-top: 10px;
 	display: block;
 	width: 600px;
@@ -43,11 +46,11 @@ h1 {
 
 #container h1 {
 	margin-bottom: 0px;
-	font-family: 'Belleza', sans-serif;
+	font-family: 'Overlock', sans-serif;
 }
 
 #content h2 {
-	font-family: 'Belleza', sans-serif;
+	font-family: 'Overlock', sans-serif;
 	font-size: 30px;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -58,7 +61,7 @@ ul {
 }
 
 #content {
-	font-family: 'Open Sans', Arial, sans-serif;
+	font-family: 'Overlock', Arial, sans-serif;
 	color: #F2E6B6;
 	font-size: 18px;
 	margin-top: 0px;
@@ -91,5 +94,5 @@ footer a {
 }
 
 footer a:hover {
-  background-color: yellow;
+  color: #fff !important;
 }

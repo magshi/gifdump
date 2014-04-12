@@ -3,7 +3,9 @@
     <div class="row">
       <% group.compact.each do |idea| %>
       <div class="span4">
-        <p><%= image_tag idea.picture_url(:thumb) if idea.picture? %></p><%= link_to 'edit', edit_idea_path(idea) %> | <%= link_to 'delete', idea, method: :delete, data: { confirm: 'Hogg nooooo' } %>
+        <p><%= image_tag idea.picture_url(:thumb) if idea.picture? %></p>
+        <%= link_to 'Show', idea, @idea %> |
+        <%= link_to 'Delete', idea, method: :delete, data: { confirm: 'Hogg nooooo' } %>
       </div>
     <% end %>
   </div>
@@ -12,7 +14,6 @@
 
 <footer>
   <div id="container">
-    <%= link_to 'NEW', new_idea_path %>
+    <%= link_to 'New', new_idea_path %>
   </div>
 </footer>
-
